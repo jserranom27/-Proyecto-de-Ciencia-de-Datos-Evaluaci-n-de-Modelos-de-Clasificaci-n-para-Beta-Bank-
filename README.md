@@ -1,5 +1,5 @@
 <div align="center"> <img src="Flux_Dev_A_highquality_modern_digital_illustration_of_a_futuri_0.jpeg" alt="Banner del Proyecto" width="100%"> </div>
-# 🏦 Proyecto de Ciencia de Datos: Modelos Predictivos para Beta Bank 💳📊
+#🏦 Proyecto de Ciencia de Datos: Modelos Predictivos para Beta Bank 💳📊
 
 ## 📌 Problema
 Cada mes, Beta Bank pierde clientes, lo que impacta sus ingresos. La dirección ha identificado que retener clientes es más rentable que adquirir nuevos. Para ello, se necesita un modelo que prediga con precisión qué clientes cancelarán su cuenta, permitiendo tomar medidas preventivas.
