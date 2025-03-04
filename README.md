@@ -1,42 +1,41 @@
 <div align="center"> <img src="Flux_Dev_A_highquality_modern_digital_illustration_of_a_futuri_0.jpeg" alt="Banner del Proyecto" width="100%"> </div>
 🏦 Proyecto de Ciencia de Datos: Evaluación de Modelos de Clasificación para Beta Bank 💳📊
 📌 Problema
-Beta Bank busca reducir su tasa de pérdida de clientes mediante un modelo de clasificación que prediga con precisión si un cliente cancelará su cuenta. Sin embargo, el conjunto de datos presenta un fuerte desbalance de clases, donde la mayoría de los clientes permanecen en el banco y solo una minoría cancela su cuenta. Esto genera modelos que pueden mostrar alta precisión simplemente prediciendo siempre la clase mayoritaria, sin realmente identificar a los clientes en riesgo.
+Cada mes, Beta Bank pierde clientes, lo que impacta sus ingresos. La dirección ha identificado que retener clientes es más rentable que adquirir nuevos. Para ello, se necesita un modelo que prediga con precisión qué clientes cancelarán su cuenta, permitiendo tomar medidas preventivas.
 
-Nuestro objetivo es desarrollar un modelo predictivo robusto que equilibre precisión y recall, utilizando la métrica F1-score, y aplicar técnicas de sobremuestreo y submuestreo para mejorar su desempeño en la predicción de cancelaciones.
+El desafío clave es el desequilibrio de clases, ya que la mayoría de los clientes permanecen en el banco, mientras que solo una minoría se da de baja. Esto genera modelos con alta precisión que ignoran la clase minoritaria, fallando en detectar clientes en riesgo.
 
-🏗️ Solución
-Entrenamiento de Modelos Iniciales:
-Se probaron tres algoritmos de clasificación sin aplicar técnicas de balanceo:
+El objetivo es desarrollar un modelo predictivo que maximice el F1-score, asegurando un equilibrio entre precisión y recuperación.
 
-Árboles de Decisión
-Bosques Aleatorios
-Regresión Logística
-📊 Resultados de F1-score en validación:
+🏗️ Enfoque y Solución
+Se probaron tres modelos de clasificación iniciales sin aplicar técnicas de balanceo:
 
-Árbol de Decisión: 0.6966
-Bosque Aleatorio: 0.7166
-Regresión Logística: 0.0786
-Manejo del Desbalance de Clases:
+Árboles de Decisión 🌳
+Bosques Aleatorios 🌲🌲
+Regresión Logística 📉
+📊 Resultados iniciales (F1-score en validación):
 
-Sobremuestreo: Se generaron nuevas muestras de la clase minoritaria para equilibrar la distribución.
-Submuestreo: Se redujo la cantidad de muestras de la clase mayoritaria para nivelar los datos.
-Resultados y Evaluación en el Conjunto de Prueba:
+✔️ Árbol de Decisión: 0.6966
+✔️ Bosque Aleatorio: 0.7166
+❌ Regresión Logística: 0.0786 (ineficiente para datos desbalanceados)
 
-Con sobremuestreo, el Bosque Aleatorio alcanzó un F1-score de 0.8075 en validación.
-En el conjunto de prueba, el mejor modelo fue Bosque Aleatorio con sobremuestreo, obteniendo un F1-score de 0.6042.
+Para mejorar la detección de clientes en riesgo, se aplicaron técnicas de balanceo de clases:
 
+🔹 Sobremuestreo: Aumento de datos de la clase minoritaria.
+🔹 Submuestreo: Reducción de datos de la clase mayoritaria.
 
-🛠️ Tecnologías Utilizadas
+📈 Mejor resultado tras balanceo:
+✅ Bosque Aleatorio con sobremuestreo → F1-score en validación: 0.8075
+✅ En el conjunto de prueba, este modelo logró un F1-score de 0.6042, superando el umbral requerido de 0.59.
+
+⚙️ Tecnologías Utilizadas
 Python
 Pandas
 NumPy
 Scikit-learn
 Matplotlib
 Seaborn
-
-
-📈 Conclusiones
-El Bosque Aleatorio con sobremuestreo fue el modelo más efectivo, demostrando que balancear el dataset mejora significativamente la predicción de cancelaciones.
-La métrica F1-score validó que el modelo no solo predice correctamente a los clientes que se quedan, sino también a los que cancelan.
-La solución desarrollada permitirá a Beta Bank anticipar cancelaciones y diseñar estrategias proactivas para la retención de clientes.
+🔎 Conclusiones
+✔️ El Bosque Aleatorio con sobremuestreo fue el modelo más efectivo, logrando predecir con precisión los clientes en riesgo de churn.
+✔️ El balanceo de datos mejoró significativamente el rendimiento, evitando sesgos hacia la clase mayoritaria.
+✔️ Este modelo permitirá a Beta Bank implementar estrategias de retención, reduciendo pérdidas y mejorando la relación con sus clientes.
