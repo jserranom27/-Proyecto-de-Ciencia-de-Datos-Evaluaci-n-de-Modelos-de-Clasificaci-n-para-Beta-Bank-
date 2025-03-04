@@ -1,4 +1,4 @@
-<div align="center"> <img src="URL_DE_TU_IMAGEN" alt="Banner del Proyecto" width="100%"> </div>
+<div align="center"> <img src="Flux_Dev_A_highquality_modern_digital_illustration_of_a_futuri_0.jpeg" alt="Banner del Proyecto" width="100%"> </div>
 🏦 Proyecto de Ciencia de Datos: Evaluación de Modelos de Clasificación para Beta Bank 💳📊
 📌 Problema
 Beta Bank busca reducir su tasa de pérdida de clientes mediante un modelo de clasificación que prediga con precisión si un cliente cancelará su cuenta. Sin embargo, el conjunto de datos presenta un fuerte desbalance de clases, donde la mayoría de los clientes permanecen en el banco y solo una minoría cancela su cuenta. Esto genera modelos que pueden mostrar alta precisión simplemente prediciendo siempre la clase mayoritaria, sin realmente identificar a los clientes en riesgo.
