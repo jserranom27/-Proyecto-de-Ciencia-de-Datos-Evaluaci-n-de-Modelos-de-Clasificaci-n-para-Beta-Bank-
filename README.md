@@ -25,6 +25,8 @@ Resultados y Evaluación en el Conjunto de Prueba:
 
 Con sobremuestreo, el Bosque Aleatorio alcanzó un F1-score de 0.8075 en validación.
 En el conjunto de prueba, el mejor modelo fue Bosque Aleatorio con sobremuestreo, obteniendo un F1-score de 0.6042.
+
+
 🛠️ Tecnologías Utilizadas
 Python
 Pandas
@@ -32,6 +34,8 @@ NumPy
 Scikit-learn
 Matplotlib
 Seaborn
+
+
 📈 Conclusiones
 El Bosque Aleatorio con sobremuestreo fue el modelo más efectivo, demostrando que balancear el dataset mejora significativamente la predicción de cancelaciones.
 La métrica F1-score validó que el modelo no solo predice correctamente a los clientes que se quedan, sino también a los que cancelan.
